@@ -4,7 +4,16 @@
              x:Class="MockMN.View.A010Page">
 
     <VerticalStackLayout>
+        <CarouselView>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
 
+
+                </DataTemplate>
+
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
 
     </VerticalStackLayout>
 
