@@ -6,27 +6,33 @@
     <ContentPage.BindingContext>
         <viewmodel:A010ViewModel />
     </ContentPage.BindingContext>
-
-    <VerticalStackLayout>
+    <VerticalStackLayout BackgroundColor="WhiteSmoke">
         <CarouselView
             ItemsSource="{Binding Carousels}"
+            IndicatorView="indicatorView"
             Loop="False">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <VerticalStackLayout>
-                        <Frame>
+                        <Frame
+                            CornerRadius="0"
+                            BackgroundColor="Gainsboro">
                             <Image Source="{Binding ImageUrl}" />
                         </Frame>
-                        <Label Text="{Binding ExplainText}" />
+                        <Label
+                           Text="{Binding ExplainText}"
+                           Padding="10"
+                           HorizontalTextAlignment="Center"/>
                     </VerticalStackLayout>
-
                 </DataTemplate>
-
             </CarouselView.ItemTemplate>
-
         </CarouselView>
-
+        <IndicatorView
+            x:Name="indicatorView"
+            IndicatorsShape="Circle"
+            IndicatorColor="LightGray"
+            SelectedIndicatorColor="Red"
+            HorizontalOptions="Center" />
     </VerticalStackLayout>
-
 </ContentPage>
 

@@ -4,6 +4,9 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Collections;
 using MockMN.Model;
+using System.Windows.Input;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace MockMN.ViewModel;
 
@@ -11,8 +14,8 @@ public partial class A010ViewModel : ObservableObject
 {
 	readonly IList<A010Carousel> source;
 	public ObservableCollection<A010Carousel> Carousels { get; set; } = new ObservableCollection<A010Carousel>();
-	
-	public A010ViewModel()
+
+    public A010ViewModel()
 	{
 		source = new List<A010Carousel>();
 		Create_A010Carousels();
