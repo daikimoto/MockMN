@@ -6,11 +6,11 @@
     <ContentPage.BindingContext>
         <viewmodel:A010ViewModel />
     </ContentPage.BindingContext>
-    <VerticalStackLayout BackgroundColor="WhiteSmoke">
+    <VerticalStackLayout>
         <CarouselView
-            ItemsSource="{Binding Carousels}"
-            IndicatorView="indicatorView"
-            Loop="False">
+        ItemsSource="{Binding Carousels}"
+        IndicatorView="indicatorView"
+        Loop="False">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <VerticalStackLayout>
@@ -30,9 +30,12 @@
         <IndicatorView
             x:Name="indicatorView"
             IndicatorsShape="Circle"
+            Margin="0,0,0,10"
             IndicatorColor="LightGray"
             SelectedIndicatorColor="Red"
             HorizontalOptions="Center" />
+        <Border />
+
     </VerticalStackLayout>
 </ContentPage>
 
