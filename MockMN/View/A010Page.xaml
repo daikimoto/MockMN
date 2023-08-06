@@ -20,9 +20,9 @@
                             <Image Source="{Binding ImageUrl}" />
                         </Frame>
                         <Label
-                           Text="{Binding ExplainText}"
-                           Padding="10"
-                           HorizontalTextAlignment="Center"/>
+                            Text="{Binding ExplainText}"
+                            Padding="10"
+                            HorizontalTextAlignment="Center"/>
                     </VerticalStackLayout>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
@@ -35,7 +35,51 @@
             SelectedIndicatorColor="Red"
             HorizontalOptions="Center" />
         <Border />
+        <Label
+            Text="{Binding A010_attention01}"
+            Padding="10"
+            FontSize="16"
+            BackgroundColor="AliceBlue"/>
+        <HorizontalStackLayout HeightRequest="20">
+            <Image Source="exclamation.png" />
+            <Label Text="{Binding A010_attention02}" />       
+        </HorizontalStackLayout>
 
+        <Frame
+            CornerRadius="4"
+            Margin="10,2,10,0">
+            <Grid
+                ColumnDefinitions="1*, 19*">
+                <CheckBox Grid.Column="0"/>
+                <Label
+                    Grid.Column="1"
+                    Text="{Binding A010_checkBoxLabel01}"
+                    Margin="16,0,0,0"/>
+            </Grid>
+        </Frame>
+        <Frame
+            CornerRadius="4"
+            Margin="10,2,10,0">
+            <Grid
+                ColumnDefinitions="1*, 19*">
+                <CheckBox Grid.Column="0"/>
+                <Label
+                    Grid.Column="1"
+                    Text="{Binding A010_checkBoxLabel02}"
+                    Margin="16,0,0,0"/>
+            </Grid>
+        </Frame>
+        <Frame
+            CornerRadius="4"
+            Margin="10,2,10,0">
+            <Grid
+                ColumnDefinitions="1*, 19*">
+                <CheckBox Grid.Column="0"/>
+                <Label
+                    Grid.Column="1"
+                    Text="{Binding A010_checkBoxLabel03}"
+                    Margin="16,0,0,0"/>
+            </Grid>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
-

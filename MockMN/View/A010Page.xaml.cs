@@ -10,5 +10,3 @@ public partial class A010Page : ContentPage
 		BindingContext = new A010ViewModel();
 	}
 }
-
-
