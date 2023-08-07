@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mockmn</ApplicationId>
-		<ApplicationIdGuid>bb2426ba-13bf-4cee-8c8f-f233721d2bb2</ApplicationIdGuid>
+		<ApplicationIdGuid>fd890f32-71bd-4a14-807e-069b1483313f</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -55,14 +55,4 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Remove="View\" />
-	  <None Remove="Model\" />
-	  <None Remove="ViewModel\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="View\" />
-	  <Folder Include="Model\" />
-	  <Folder Include="ViewModel\" />
-	</ItemGroup>
 </Project>
