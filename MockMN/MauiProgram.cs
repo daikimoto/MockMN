@@ -19,6 +19,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
+		builder.Services.AddSingleton("A010Page");
+		builder.Services.AddSingleton("A010ViewModel");
+
 		return builder.Build();
 	}
 }
