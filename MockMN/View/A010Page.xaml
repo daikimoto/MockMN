@@ -7,8 +7,40 @@
     <ContentPage.BindingContext>
         <viewmodel:A010ViewModel/>
     </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="＜"/>
+        <ToolbarItem Text="はじめに"/>
+
+    </ContentPage.ToolbarItems>
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="WhiteSmoke">
+            <Border>
+                <VerticalStackLayout>
+                    <CarouselView ItemsSource="{Binding Carousels}"
+                                  IndicatorView="indicatorView"
+                                  Loop="False">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <VerticalStackLayout>
+                                    <Border>
+                                        <Image Source="{Binding ImageUrl}"/>
+                                    </Border>
+                                    <Label Text="{Binding ExplainText}"
+                                           Padding="20,10"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"/>
+                                </VerticalStackLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <IndicatorView x:Name="indicatorView"
+                                   IndicatorsShape="Circle"
+                                   IndicatorColor="LightGrey"
+                                   SelectedIndicatorColor="Red"
+                                   HorizontalOptions="Center"
+                                   Margin="0,0,0,10"/>
+                </VerticalStackLayout>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

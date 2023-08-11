@@ -4,7 +4,6 @@ namespace MockMN.Model;
 
 public class A010Guidance
 {
-	public A010Guidance()
-	{
-	}
+	public string ImageUrl { get; set; }
+	public string ExplainText { get; set; }
 }
